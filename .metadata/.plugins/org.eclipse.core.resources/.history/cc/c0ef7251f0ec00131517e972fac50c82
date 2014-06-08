@@ -1,0 +1,15 @@
+import java.awt.*;
+
+import javax.swing.*;
+public class Frame extends JFrame /*implements ActionListener*/ {
+	public Frame(){
+		this.setSize(1200, 720);//fenster hd auflösung
+		this.setDefaultCloseOperation(3);//normaler closebutton
+		this.setLocationRelativeTo(null);//setzt fenster in die mitte
+		this.setResizable(true);//fenstergröße einstellbar
+		this.setTitle("DNMonsters");
+		JPanel panel=new JPanel();
+		JButton button=new JButton("Start");
+		this.setVisible(true);//macht fenster sichtbar
+	}
+}

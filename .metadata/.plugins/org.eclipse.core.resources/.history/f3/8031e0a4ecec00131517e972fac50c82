@@ -1,0 +1,9 @@
+import java.awt.*;
+
+import javax.swing.*;
+public class Frame extends JFrame {
+	public Frame(){
+		this.setSize(1200, 720);
+		this.setVisible(true);
+	}
+}
