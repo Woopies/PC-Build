@@ -9,7 +9,7 @@ import DNmonsters.src.Skill;
 public class Verwurzeln extends Skill {
 
     public Verwurzeln(){
-        super("Verwurzeln",0,1.5,"eledeff",10,0);
+        super("Verwurzeln",0,1.5,10,0);
     }
     @Override
     public void attack(Monster m1,Monster m2){

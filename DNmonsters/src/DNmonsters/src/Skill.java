@@ -43,6 +43,12 @@ public class Skill {
 		
 	}
 
+    public double mult(int type, Monster m){
+        double mult=1;
+        mult=tabelle[type][m.klasse[0].get_klasse()]*tabelle[type][m.klasse[1].get_klasse()];
+        return mult;
+    }
+
     public boolean dodge(Monster m1, Monster m2){
         boolean dodge;
         int idodge;

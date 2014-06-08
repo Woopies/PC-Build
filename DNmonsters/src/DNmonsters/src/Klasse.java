@@ -58,7 +58,7 @@ public class Klasse {
 			}
  }
 	
-	public int get_eleclass(){
+	public int get_klasse(){
 		return klasse;
 	}
 }

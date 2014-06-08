@@ -17,9 +17,8 @@ public class Blaettersturm extends Skill{
         while(c<=quantity){
             if (super.dodge(m1, m2)==false)
             {
-                int abzug=(int)(dmg+m1.stats.get_eledmg()*scale+Math.random()*2-1);
-                if (m2.klasse.)
-                m2.stats.set_life();
+                int abzug=(int)((dmg+m1.stats.get_eledmg()*scale+Math.random()*2-1)*super.mult(7,m2));
+                m2.stats.set_life(-abzug);
             c++;
             }
         }

@@ -14,10 +14,20 @@ public class Frame extends JFrame implements ActionListener {
         this.setLocationRelativeTo(null);
         this.setResizable(true);
         this.setTitle("Pugnatores Naturarum");
+        JPanel panel=new JPanel();
+
+        JButton b1 = new JButton("2.Schnellkampf");
+        b1.addActionListener(this);
+        b1.setActionCommand("Fight");
+        panel.add(b1);
+        this.add(panel);
         this.setVisible(true);
     }
     @Override
     public void actionPerformed(ActionEvent e) {
+        if("Fight".equals(e.getActionCommand())){
+
+        }
 
     }
 }
