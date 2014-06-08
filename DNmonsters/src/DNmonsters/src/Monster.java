@@ -22,6 +22,7 @@ public class Monster {
         int i=1;
         while (level>i){
             level_up();
+            i++;
         }
     }
     public void level_up(){}
