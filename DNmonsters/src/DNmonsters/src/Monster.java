@@ -2,7 +2,7 @@ package DNmonsters.src;
 
 public class Monster {
 	public Stats stats;
-	public int[] skills;
+	public Skill[] skills=new Skill[4];
 	public Klasse klasse[]=new Klasse[2];
     public String name;
 

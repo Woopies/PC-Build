@@ -1,10 +1,10 @@
 package DNmonsters.src;
 
-import Monster.*;
+import DNmonsters.src.Monsters.*;
 
 public class Trainer {
-	private Monster[] team =new Monster[4];{
-	team[0]=new Yggdrasil(15);
-	team[1]=new Vulkanura(20);
+	private Monster[] team =new Monster[4];
+
+    {
 }
 }
