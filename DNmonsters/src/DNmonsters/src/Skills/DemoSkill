@@ -6,18 +6,18 @@ import DNmonsters.src.Skill;
 /**
  * Created by nicspeed on 08.06.2014.
  */
-public class Stochern extends Skill{
-    public Stochern(){
-        super("Stochern",3,0.2,5,90);
+public class <SkillNAME> extends Skill{
+    public <SkillNAME>(){
+        super("<SkillNAME>",<DMG(int)>,<SCALE(double)>,<AP COSTS(int)>,<PRÄZESSION(int)>);
     }
     @Override
     public void attack(Monster m1,Monster m2){
-        int quantity=(int)(Math.random()*3+3);
+        int quantity=(int)(Math.random()*4+3);    //+3=mindestens 3, *4=bis zu 4 Extra//
         int c=1;
         while(c<=quantity){
             if (super.dodge(m1, m2)==false)
             {
-                int abzug=(int)(dmg+m1.stats.get_eledmg()*scale+Math.random()*5-2)*super.mult(3,m2));
+                int abzug=(int)(dmg+m1.stats.get_eledmg()*scale+Math.random()*2-1)*super.mult(<Skillklasse>,m2)); //(Skillklasse in Klasses nachschauen//
                 if (m2.klasse.)
                     m2.stats.set_life();
                 c++;
@@ -25,4 +25,3 @@ public class Stochern extends Skill{
         }
     }
 }
-
