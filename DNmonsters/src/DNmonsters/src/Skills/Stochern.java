@@ -17,9 +17,8 @@ public class Stochern extends Skill{
         while(c<=quantity){
             if (super.dodge(m1, m2)==false)
             {
-                int abzug=(int)(dmg+m1.stats.get_eledmg()*scale+Math.random()*5-2)*super.mult(3,m2));
-                if (m2.klasse.)
-                    m2.stats.set_life();
+                int abzug=(int)((dmg+m1.stats.get_eledmg()*scale+Math.random()*5-2)*super.mult(3,m2));
+                    m2.stats.set_life(-abzug);
                 c++;
             }
         }
