@@ -9,7 +9,7 @@ import DNmonsters.src.Skills.*;
 public class Yggdrasil extends Monster {
 
     public Yggdrasil(int level){
-        super("Yggdrasil",level,150,150,20,30,22,28,20,0,100,5,"Flora","Lux");//
+        super("Yggdrasil",level,150,150,20,30,22,28,20,0,5,"Flora","Lux");//name,level,lifemax,life(für fangen später),physdmg,physdeff,eledmg,eledff,speed,dodge,precision,physclass,eleclass
         skills[0]=new Blaettersturm();
         skills[3]=new Verwurzeln();
     }

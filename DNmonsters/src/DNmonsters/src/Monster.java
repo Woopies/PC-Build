@@ -6,7 +6,7 @@ public class Monster {
 	public Klasse klasse[]=new Klasse[2];
     public String name;
 
-    public Monster(String name,int level,int lifemax, int life, int physdmg, int physdeff, int eledmg, int eledeff,int speed, int dodge,int expnext,int precision,String Klasse1,String Klasse2){
+    public Monster(String name,int level,int lifemax, int life, int physdmg, int physdeff, int eledmg, int eledeff,int speed, int dodge,int precision,String Klasse1,String Klasse2){
         this.name=name;
         stats.set_eledeff(eledeff);
         stats.set_dodge(dodge);
