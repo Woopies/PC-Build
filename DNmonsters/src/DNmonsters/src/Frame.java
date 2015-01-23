@@ -16,7 +16,7 @@ public class Frame extends JFrame implements ActionListener {
         this.setLocationRelativeTo(null);
         this.setResizable(true);
         this.setTitle("Pugnatores Naturarum");
-        mainMenu =new MainMenu(1280,720,this);
+        mainMenu =new MainMenu();
         this.add(mainMenu);
         this.setVisible(true);
     }
