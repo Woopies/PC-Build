@@ -11,6 +11,20 @@ import java.awt.event.ActionListener;
 public class Frame extends JFrame implements ActionListener {
     private MainMenu mainMenu;
     public Frame(){
+
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e1) {
+            System.err.println("Cannot set System LookAndFeel! Using Crossplatform LookAndFeel instead!");
+            e1.printStackTrace();
+            try {
+                UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+            } catch (Exception e2) {
+                System.err.println("Error setting Crossplatform LookAndFeel!");
+                e2.printStackTrace();
+            }
+        }
+
         this.setSize(1280, 720);
         this.setDefaultCloseOperation(3);
         this.setLocationRelativeTo(null);
